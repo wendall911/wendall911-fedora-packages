@@ -19,7 +19,7 @@ $ rpm -ihv --nodeps faad2-devel-2.7-16.fc13.i686.rpm
 
 Two rpm files are generated and placed into:
 ~/rpmbuild/RPMS/{arch}
-~/rpmbuild/SRPMS/{arch}
+~/rpmbuild/SRPMS/
 
 To install
 rpm -ihv pianobar-2010.6.1-1.fc13.i686.rpm
