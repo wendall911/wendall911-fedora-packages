@@ -9,8 +9,8 @@ URL: http://6xq.net/html/00/17.html
 Source0: http://github.com/PromyLOPh/pianobar/tarball/pianobar-gf967ab3.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
-BuildRequires: make, libao-devel, libxml2-devel, faad2-libs, libmad-devel
-Requires: libao, faad2-libs, libxml2
+BuildRequires: make, libao-devel, faad2-libs, libmad-devel
+Requires: libao, faad2-libs
 
 %description
  "pianobar" supports all important features pandora has:
