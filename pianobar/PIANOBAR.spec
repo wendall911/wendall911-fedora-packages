@@ -1,12 +1,12 @@
 Name: pianobar
-Version: 2010.10.20
+Version: 2010.10.07
 Release: 1%{?dist}
 Summary: "pianobar" is a free/open-source, console-based replacement for pandora's flash player.
 
 Group: Applications/Multimedia
 License: AS-IS
-URL: http://uint16.ath.cx/software/pandora_client.en.html	
-Source0: http:/download.github.com/pianobar-4ea9c3f.tar.gz
+URL: http://6xq.net/html/00/17.html
+Source0: http://github.com/PromyLOPh/pianobar/tarball/pianobar-gf967ab3.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
 BuildRequires: make, libao-devel, libxml2-devel, faad2-libs, libmad-devel
@@ -26,7 +26,7 @@ gmake VERBOSE=1 %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install PREFIX=usr DESTDIR=$RPM_BUILD_ROOT
+gmake install PREFIX=usr DESTDIR=$RPM_BUILD_ROOT
 
 %check
 

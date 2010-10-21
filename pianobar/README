@@ -10,12 +10,11 @@ $ wget http://dl.atrpms.net/f13-i386/atrpms/stable/faad2-devel-2.7-16.fc13.i686.
 $ rpm -ihv --nodeps faad2-devel-2.7-16.fc13.i686.rpm
 
 ## Build RPM
-1. copy contents of macros.cmake into ~/.rpmmacros
-2. checkout pianobar from github into ~/rpmbuild/BUILD/
+1. update PIANOBAR.spec with new version and source tarball name
+2. Fetch source. Could use spectool here, but it's semi-broken rpm crap and path must 100% match the filename.
 3. create source tarball and place in ~/rpmbuild/SOURCES/ (tar -cjf pianobar-{HEAD}.tar.gz BUILD/*)
-4. update PIANOBAR.spec with new version and source tarball name
-5. cd ~/rpmbuild/SPECS/
-6. $ rpmbuild -ba PIANOBAR.spec
+4. cd ~/rpmbuild/SPECS/
+5. $ rpmbuild -ba PIANOBAR.spec
 
 Two rpm files are generated and placed into:
 ~/rpmbuild/RPMS/{arch}
